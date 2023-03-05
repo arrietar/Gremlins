@@ -12,6 +12,16 @@
         android:theme="@style/Theme.Gremlins_App"
         tools:targetApi="31">
         <activity
+            android:name=".activity_empleado"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

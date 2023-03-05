@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Gremlins_App</string>
+    <string name="hint_nombre">Nombre:</string>
+    <string name="hint_cedula">Cedula:</string>
+    <string name="hint_correo">Correo Electrónico:</string>
+    <string name="hint_telefono">Teléfono:</string>
+    <string name="hint_direccion">Dirección:</string>
+    <string name="hint_cargo">Cargo:</string>
+    <string name="hint_turno">Turno:</string>
+    <string-array name="tipos_empleados">
+        <item>Gerente</item>
+        <item>Administrador</item>
+        <item>Recepcionista</item>
+        <item>Empacador</item>
+    </string-array>
+    <string-array name="turnos">
+        <item>D</item>
+        <item>N</item>
+        <item>M</item>
+    </string-array>
+    <string name="btn_guardar">Guardar Registro</string>
+    <string name="menu_nuevo">Nuevo Registro</string>
 </resources>
