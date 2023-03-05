@@ -35,7 +35,7 @@ public class DbHelper extends SQLiteOpenHelper {
                 "telefono VARCHAR(13) NOT NULL," +
                 "correo TEXT NOT NULL," +
                 "direccion TEXT," +
-                "tipoEmpleado TEXT," +
+                "cargo TEXT," +
                 "turno CHAR)");
 
         sqLiteDatabase.execSQL("CREATE TABLE " + TABLE_PROVEEDORES + "(" +
