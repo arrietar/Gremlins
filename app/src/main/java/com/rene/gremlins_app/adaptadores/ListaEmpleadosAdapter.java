@@ -1,5 +1,7 @@
 package com.rene.gremlins_app.adaptadores;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.rene.gremlins_app.R;
+import com.rene.gremlins_app.activity_ver;
 import com.rene.gremlins_app.entidades.Empleados;
 
 import java.util.ArrayList;
@@ -53,6 +56,16 @@ public class ListaEmpleadosAdapter extends RecyclerView.Adapter<ListaEmpleadosAd
             viewNombre = itemView.findViewById(R.id.viewNombre);
             viewTelefono = itemView.findViewById(R.id.viewTelefono);
             viewCorreo = itemView.findViewById(R.id.viewCorreo);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, activity_ver.class);
+                    intent.putExtra("ID", listaEmpleados.get(getAdapterPosition()).getId_Empleado());
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }
